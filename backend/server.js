@@ -6,7 +6,7 @@ const multer = require('multer');
 const db = require('./db');
 
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5000;
 
 // Ensure uploads folder exists
 const uploadsDir = path.join(__dirname, 'uploads');
@@ -345,7 +345,7 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', service: 'education-vault-backend', timestamp: new Date().toISOString() });
 });
 
-app.listen(PORT, () => {
-  console.log(`Educational Vault Backend API running on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
