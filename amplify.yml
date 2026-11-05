@@ -1,0 +1,15 @@
+my-website/                 <-- Root folder
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/
+│   ├── src/
+│   └── package.json
+│
+├── amplify.yml             <-- HERE
+├── .gitignore
+└── README.md
