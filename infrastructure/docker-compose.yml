@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ../backend
+      dockerfile: ../infrastructure/Dockerfile.backend
+    ports:
+      - "5001:5001"
+    volumes:
+      - ../database:/app/database
+      - ../backend/uploads:/app/backend/uploads
+    environment:
+      - PORT=5001
+      - NODE_ENV=production
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: ../infrastructure/Dockerfile.frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+

@@ -1,0 +1,25 @@
+{
+  "name": "eduvault-fullstack",
+  "version": "1.0.0",
+  "description": "Fullstack web platform for storing educational information, degrees, certificates, and CV documents.",
+  "scripts": {
+    "migrate": "node database/migrate.js",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "education",
+    "vault",
+    "certificates",
+    "degrees",
+    "cv",
+    "resume",
+    "fullstack",
+    "react",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+

@@ -1,0 +1,17 @@
+{
+  "name": "education-vault-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Educational Information Vault",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node ../database/migrate.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
+
